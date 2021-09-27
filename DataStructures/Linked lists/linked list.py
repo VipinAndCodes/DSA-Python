@@ -34,5 +34,7 @@ class LinkedList:
 
     actual_node.nextNode = new_node
 
+#NEED
+
 
 
