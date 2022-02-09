@@ -1,3 +1,4 @@
+
 class BubbleSort:
 
     def __init__(self,nums):
@@ -10,9 +11,6 @@ class BubbleSort:
             for j in range(len(self.nums)-i-1):
                 if self.nums[j] > self.nums[j+1]:
                     self.swap(j,j+1)
-
-
-
 
 
     def swap(self,i,j):

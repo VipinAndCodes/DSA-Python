@@ -12,7 +12,7 @@ def selection_sort(nums):
         for j in range(i, len(nums)):
             
             #for accending order
-            # if nums[j] < nums[index]:
+            # if nums[j] > nums[index]:
             #     index = j
 
             #for decending order
