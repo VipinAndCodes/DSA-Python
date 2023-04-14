@@ -51,9 +51,13 @@ class LinkedList:
             return
         self.numOfNodes = self.numOfNodes - 1
 
+        #update the refernces(so we have the data we want to remove
+        #the head node is one we want to remove 
         if previous_node is None:
             self.head = actual_node.nextNode
         else:
+            #remove an internal node by updating the points
+            # no need to del the node beacause the garbage collector will do that
             previous_node.nextNode = actual_node.nextNode
 
     # size of linked list
@@ -78,6 +82,7 @@ linked_list = LinkedList()
 linked_list.insert_start(4)
 linked_list.insert_start(3)
 linked_list.insert_start(7)
+linked_list.insert_end(18)
 linked_list.insert_end(18)
 linked_list.insert_start('Adam')
 linked_list.traverse()
